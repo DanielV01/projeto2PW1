@@ -1,0 +1,28 @@
+<h1>Lista de informações de cadastradas: </h1>
+<a href= "/cadastro" class="btn"><button>Cadastrar</button></a><br>
+
+<hr>
+{{#each alunos}}
+    <p >Nome Completo: {{dataValues.nome}}{{dataValues.sobreNome}}</p>
+    <p>E-mail: {{dataValues.email}}</p>
+    <p>Profissão: {{dataValues.profissao}}</p>
+    <p>Idade: {{dataValues.idade}}</p>
+    <p>Data de cadastro: {{#formatDate dataValues.createAt}}{{/formatDate}}</p>
+    <a href= "/deletar/{{dataValues.id}}"><button>Deletar</button></a>
+    <a href= "/editar/{{dataValues.id}}"><button>Editar</button></a>
+    <hr>
+{{/each}}
+<style>
+    .btn{
+        margin-left: 900px;
+    }
+    h1{
+        text-align: center;
+    }
+    body{
+        background-color: silver;
+    }
+    p{
+        color: black;
+    }
+</style>

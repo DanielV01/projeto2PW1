@@ -1,0 +1,55 @@
+<h1>Editar cadastro: </h1>
+<div class="card">
+    <form action="/editar" method="POST">
+    <input type="hidden" name="id" value="{{dataValues.id}}">
+
+        <label for="nome">Nome: </label><br>
+            <input type="text" id="nome" name="nome" placeholder="Nome aluno" value="{{dataValues.nome}}" autocomplete="off"><br>
+
+        <label for="nome">Sobrenome: </label><br>
+            <input type="text" id="sobreNome" name="sobreNome" placeholder="Sobrenome do aluno" value="{{dataValues.sobreNome}}" autocomplete="off"><br>
+
+        <label for="email">E-mail: </label><br>
+            <input type="email" id="email" name="email" placeholder="E-mail do aluno" value="{{dataValues.email}}" autocomplete="off"><br>
+
+        <label for="profissao">Profissão: </label><br>
+            <input type="text" id="profissao" name="profissao" placeholder="Profissao do usuário" value="{{dataValues.profissao}}" autocomplete="off"><br>
+
+        <label for="idade">Idade: </label><br>
+            <input type="number" id="idade" name="idade" placeholder="Idade" value="{{dataValues.idade}}" autocomplete="off"><br>
+
+       
+
+    <button type="submit">Editar aluno</button>
+
+<style>
+    body{background-color: silver;}
+    h1{
+        color: black;
+        padding-right: 10px;
+        margin-left: 770px;
+        margin-right: 750px;
+        margin-bottom: 0px;
+        margin-top: 300px;
+    }
+    .card{
+
+        border-radius: 2px;
+        box-shadow: 1px 1px 3px black;
+        border: 2px solid;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        margin-right: 870px;
+        margin-left: 780px;
+        margin-top: 30px;
+    }
+    button{
+        margin-top: 5px;
+
+    }
+</style>
+
+    </form>
+</div>
